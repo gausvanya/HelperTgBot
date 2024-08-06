@@ -1,0 +1,6 @@
+aiogram
+python-dotenv
+aiosqlite
+loguru
+deep_translator
+randfacts
