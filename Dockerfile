@@ -1,13 +1,13 @@
-FROM python:3.8
+FROM python:3.10
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR ./
 
 # Copy the application files into the working directory
-COPY . /app
+COPY ./
 
 # Install the application dependencies
 RUN pip install -r requirements.txt
 
 # Define the entry point for the container
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "main.py"]
